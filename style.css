@@ -551,32 +551,45 @@ body {
     display: block;
   }
 
+
   .menu {
-    display: none;
-    position: absolute;
-    top: 82px;
-    left: 16px;
-    right: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 18px;
-    border-radius: 18px;
-    background: rgba(4, 10, 16, 0.96);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-    z-index: 110;
-    margin: 0;
-  }
+  display: flex;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  left: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(4, 10, 16, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  z-index: 110;
+  margin: 0;
+  min-width: 180px;
+  max-width: calc(100vw - 20px); /* nunca se sale de pantalla */
 
-  .menu.active {
-    display: flex;
-  }
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.95);
+  transform-origin: right center;
+  transition: opacity 0.65s ease, transform 0.65s ease, visibility 0.65s ease;
+}
 
-  .menu a {
-    width: 100%;
-    padding: 8px 0;
-  }
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(-50%) scale(1);
+}
+
+.menu a {
+  width: 100%;
+  padding: 8px 0;
+}
 
   .two-cols,
   .four-cols {
@@ -607,3 +620,8 @@ body {
     padding: 40px 0;
   }
 }
+
+
+
+
+

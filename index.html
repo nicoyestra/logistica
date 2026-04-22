@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marcos Conti | Logística Estratégica</title>
-<link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/style.css" />
+  <title>Marcos Conti | Consultoría en Logística Estratégica</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
 </head>
 <body>
 
@@ -14,251 +15,388 @@
   <div class="bg-lines line-3"></div>
 
   <header class="header">
-  <div class="container nav">
+    <div class="container nav">
+      <a href="#" class="brand">
+        <img src="img/marcoslogo.png" alt="Marcos Conti" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">MARCOS CONTI</span>
+          <span class="brand-sub">Consultoría en logística estratégica</span>
+        </div>
+      </a>
 
-<a href="#" class="brand">
-  <img src="img/marcoslogo.png" alt="Marcos Conti" class="brand-logo">
+      <nav class="menu" id="menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contacto">Contacto</a>
 
-  <div class="brand-text">
-    <span class="brand-title">MARCOS CONTI</span>
-    <span class="brand-sub">Consultoría logística estratégica</span>
-  </div>
-</a>
+          <a href="#" class="menu-cta open-form">Agendar llamada</a>
+      </nav>
 
-    <nav class="menu" id="menu">
-      <a href="#servicios">Servicios</a>
-      <a href="#resultados">Resultados</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+     <a href="#" class="btn btn-header open-form">Agendar llamada</a>
 
-    <a href="#contacto" class="btn btn-header">Solicitar diagnóstico</a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</header>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
+
         <div class="hero-text">
-          <h1>Consultoría en Logística Estratégica</h1>
+          <h1>
+            Consultoría en <span>Logística Estratégica</span>
+          </h1>
+
+          <div class="hero-line"></div>
+
           <p>
-            Ayudo a empresas a optimizar su cadena de suministro, reducir costos
-            y mejorar su operación con una estrategia clara, profesional y enfocada en resultados.
+            Ayudo a empresas a mejorar su operación logística, tomar mejores decisiones
+            y lograr resultados sostenibles a través de un enfoque estratégico y práctico.
           </p>
 
           <div class="hero-actions">
-            <a href="#contacto" class="btn">Solicitar diagnóstico</a>
+          <a href="#" class="btn open-form">Agendar llamada</a>
+           
+          </div>
+
+          <div class="hero-features">
+            <div class="feature-item">
+              <span class="feature-icon"><i data-lucide="check-circle"></i></span>
+              <span>Enfoque en resultados reales</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon"><i data-lucide="line-chart"></i></span>
+              <span>Análisis con datos e indicadores clave</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon"><i data-lucide="briefcase"></i></span>
+              <span>Experiencia en empresas líderes del sector</span>
+            </div>
           </div>
         </div>
 
         <div class="hero-image">
           <div class="hero-photo-frame">
-            <img src="img/cliente.png" alt="Cliente consultor" />
+            <img src="img/cliente.png" alt="Marcos Conti">
           </div>
         </div>
+
       </div>
     </section>
 
-    <section class="section services-section" id="servicios">
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
       <div class="container">
-        <div class="section-title">
-          <h2>Consultoría en Logística Estratégica</h2>
+        <div class="section-title center">
+          <h2>Servicios</h2>
           <p>
-            Soluciones pensadas para mejorar procesos, ordenar operaciones y aumentar la rentabilidad.
+            Soluciones adaptadas a las necesidades de tu negocio para optimizar cada eslabón de tu operación.
           </p>
         </div>
 
         <div class="cards-grid four-cols">
           <article class="card glow-card">
-            <div class="card-icon">◉</div>
-            <h3>Diagnóstico</h3>
-            <p>Evaluación integral de procesos, estructura y oportunidades de mejora.</p>
+            <div class="card-icon">
+  <i data-lucide="target"></i>
+</div>
+            <h3>Diagnóstico Logístico Integral</h3>
+            <p>
+              Evaluación completa de tu operación para detectar oportunidades de mejora,
+              riesgos y cuellos de botella.
+            </p>
           </article>
 
           <article class="card glow-card">
-            <div class="card-icon">▣</div>
-            <h3>Estrategia</h3>
-            <p>Diseño de un plan de acción claro para ordenar y optimizar la operación.</p>
+           <div class="card-icon">
+  <i data-lucide="map"></i>
+</div>
+            <h3>Estrategia y Diseño Operativo</h3>
+            <p>
+              Diseño de estrategias y estructuras operativas eficientes,
+              adaptadas a tus objetivos y recursos.
+            </p>
           </article>
 
           <article class="card glow-card">
-            <div class="card-icon">↻</div>
-            <h3>Implementación</h3>
-            <p>Puesta en marcha de mejoras logísticas adaptadas a la realidad del negocio.</p>
+            <div class="card-icon">
+  <i data-lucide="truck"></i>
+</div>
+            <h3>Optimización de Procesos y Recursos</h3>
+            <p>
+              Mejora de procesos, distribución de tareas, uso de recursos
+              e infraestructura para aumentar la productividad.
+            </p>
           </article>
 
           <article class="card glow-card">
-            <div class="card-icon">⚙</div>
-            <h3>Seguimiento</h3>
-            <p>Control, ajustes y acompañamiento para sostener resultados en el tiempo.</p>
+            <div class="card-icon">
+  <i data-lucide="bar-chart-3"></i>
+</div>
+            <h3>Control de Gestión y Seguimiento</h3>
+            <p>
+              Definición de indicadores clave (KPIs) y tableros de control
+              para monitorear resultados y tomar mejores decisiones.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- RESULTADOS -->
     <section class="section" id="resultados">
       <div class="container">
         <div class="section-title center">
-          <h2>Nuestros Servicios</h2>
+          <h2>Resultados que importan</h2>
+          <p>
+            Trabajo con un enfoque medible y orientado a generar impacto en tu operación.
+          </p>
         </div>
 
-        <div class="cards-grid two-cols">
-          <article class="card glow-card large-card">
-            <div class="card-icon">⬢</div>
-            <h3>Logística Estratégica</h3>
-            <p>
-              Análisis y planificación para optimizar la cadena de suministro y lograr
-              una operación más eficiente, ordenada y rentable.
-            </p>
-          </article>
+        <div class="results-box">
+          <div class="results-list glass-box">
+            <ul>
+              <li>Mayor eficiencia operativa</li>
+              <li>Mejores decisiones basadas en datos</li>
+              <li>Procesos más simples y escalables</li>
+              <li>Control y visibilidad de la operación</li>
+              <li>Sostenibilidad en el tiempo</li>
+            </ul>
+          </div>
 
-          <article class="card glow-card large-card">
-            <div class="card-icon">⚙</div>
-            <h3>Optimización de Procesos</h3>
-            <p>
-              Mejora de circuitos operativos, tiempos y recursos para elevar la eficiencia práctica.
-            </p>
-          </article>
+          <div class="results-image glass-box">
+            <img src="img/estadisticas2.png" alt="Resultados y trayectoria">
+          </div>
 
-          <article class="card glow-card large-card">
-            <div class="card-icon">◫</div>
-            <h3>Análisis de Costos</h3>
+          <div class="results-quote glass-box">
+            <div class="quote-mark">“</div>
             <p>
-              Evaluación de costos logísticos para detectar desvíos, reducir gastos
-              y aumentar la rentabilidad.
+              Mi objetivo es que cada proyecto se traduzca en una operación más ordenada,
+              rentable y preparada para crecer.
             </p>
-          </article>
-
-          <article class="card glow-card large-card">
-            <div class="card-icon">🚚</div>
-            <h3>Distribución y Operaciones</h3>
-            <p>
-              Optimización del transporte, almacenamiento y ejecución operativa
-              para una logística más sólida y escalable.
-            </p>
-          </article>
+            <strong>Marcos Conti</strong>
+            <span>Consultor en Logística Estratégica</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section benefits-section">
-      <div class="container">
-        <div class="section-title center">
-          <h2>Logística optimizada para empresas exitosas</h2>
-          <p>Aumentá la rentabilidad de tu compañía con una guía experta y enfocada en resultados.</p>
-        </div>
-
-        <div class="cards-grid three-cols">
-          <article class="card glow-card mini-card">
-            <div class="check-icon">✓</div>
-            <h3>Reducción de Costos</h3>
-            <p>Implementamos estrategias para disminuir gastos y mejorar tu rentabilidad.</p>
-          </article>
-
-          <article class="card glow-card mini-card">
-            <div class="check-icon">✓</div>
-            <h3>Mejora Operativa</h3>
-            <p>Agilizamos procesos logísticos para incrementar eficiencia y productividad.</p>
-          </article>
-
-          <article class="card glow-card mini-card">
-            <div class="check-icon">✓</div>
-            <h3>Escalabilidad</h3>
-            <p>Preparamos tu logística para crecer de forma ordenada, segura y sostenible.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about-section">
+    <!-- SOBRE MI -->
+    <section class="section" id="sobre-mi">
       <div class="container about-grid">
         <div class="about-photo">
           <div class="about-photo-frame">
-            <img src="img/cliente.png" alt="Marcos Conti" />
+            <img src="img/cliente.png" alt="Marcos Conti">
           </div>
         </div>
 
         <div class="about-text">
           <h2>Sobre mí</h2>
           <p>
-            Trabajo con empresas que buscan optimizar su logística y mejorar su rentabilidad.
-            Mi objetivo es brindar una mirada estratégica, práctica y profesional para transformar procesos en resultados.
+            Soy Licenciado en Logística Integral y cuento con experiencia acompañando
+            organizaciones en la mejora de sus procesos, combinando visión estratégica,
+            conocimiento operativo y un fuerte enfoque en resultados.
           </p>
+
           <p>
-            Acompaño cada proyecto con análisis, planificación e implementación,
-            adaptando las soluciones a la realidad de cada negocio.
+            Trabajo junto a empresas que necesitan ordenar, optimizar y profesionalizar
+            su operación logística para crecer con mayor control y eficiencia.
           </p>
-          <a href="#contacto" class="btn">Solicitar asesoramiento</a>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <i data-lucide="graduation-cap"></i> <!-- título -->
+              <p>Licenciado en Logística Integral</p>
+            </div>
+            <div class="highlight-box">
+             <i data-lucide="briefcase"></i>       <!-- experiencia -->
+              <p>Experiencia en operaciones logísticas</p>
+            </div>
+            <div class="highlight-box">
+             <i data-lucide="factory"></i>         <!-- industria -->
+              <p>Conocimiento de entornos productivos</p>
+            </div>
+            <div class="highlight-box">
+            <i data-lucide="award"></i>           <!-- profesional -->
+              <p>Enfoque práctico y orientado a resultados</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contacto">
-      <div class="container contact-grid">
-        <div class="contact-info glass-box">
-          <h2>Cómo trabajo</h2>
+    <!-- RECURSOS -->
+    <section class="section" id="recursos">
+      <div class="container">
+        <div class="section-title center">
+          <h2>Recursos</h2>
           <p>
-            Analizo la situación actual de tu empresa, detecto oportunidades de mejora y diseño
-            una estrategia personalizada para optimizar procesos, costos y resultados.
-          </p>
-          <p>
-            Cada propuesta se adapta a la realidad del negocio, con foco en orden, eficiencia y crecimiento.
+            Herramientas y enfoques que permiten ordenar, medir y mejorar la operación.
           </p>
         </div>
 
-        <div class="contact-form glass-box">
-          <h3>Solicitar diagnóstico</h3>
-          <form>
-            <input type="text" placeholder="Nombre" />
-            <input type="text" placeholder="Empresa" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Contame qué necesitás mejorar"></textarea>
-            <button type="submit" class="btn">Solicitar diagnóstico</button>
-          </form>
+        <div class="cards-grid three-cols">
+          <article class="card glow-card mini-card">
+            <div class="card-icon"><i data-lucide="line-chart"></i></div>
+            <h3>Indicadores clave</h3>
+            <p>
+              Definición y seguimiento de métricas para entender el desempeño real de la operación.
+            </p>
+          </article>
+
+          <article class="card glow-card mini-card">
+            <div class="card-icon"><i data-lucide="layout-dashboard"></i></div>
+            <h3>Tableros de control</h3>
+            <p>
+              Visualización de información crítica para tomar decisiones más rápidas y efectivas.
+            </p>
+          </article>
+
+          <article class="card glow-card mini-card">
+            <div class="card-icon"><i data-lucide="settings"></i></div>
+            <h3>Metodología de mejora</h3>
+            <p>
+              Enfoque ordenado para detectar problemas, priorizar acciones y sostener resultados.
+            </p>
+          </article>
         </div>
       </div>
     </section>
+
+    <!-- COMO TRABAJO -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title center">
+          <h2>Cómo trabajo</h2> 
+          <p>Un proceso claro y colaborativo para lograr mejoras sostenibles.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <h3>Entendimiento</h3>
+            <p>Analizo tu operación actual, desafíos y objetivos del negocio.</p>
+          </div>
+
+
+
+
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <h3>Análisis</h3> 
+            <p>Evalúo datos, procesos y recursos para identificar oportunidades.</p>
+          </div>
+
+
+
+
+
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <h3>Propuesta</h3>
+            <p>Diseño un plan de acción personalizado con soluciones viables.</p>
+          </div>
+
+
+          
+
+
+
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <h3>Implementación</h3>
+            <p>Acompaño la puesta en marcha y trabajo junto al equipo.</p>
+          </div>
+
+
+          
+
+
+          <div class="step-item">
+            <div class="step-number">5</div> 
+            <h3>Seguimiento</h3>
+            <p>Monitoreo resultados, ajusto y aseguro la mejora continua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="section contact-section" id="contacto">
+  <div class="container contact-cta-grid">
+
+    <div class="contact-cta glass-box">
+      <h3>¿Hablamos sobre tu operación?</h3>
+      <p>
+        Agendá una llamada y conversemos sobre cómo puedo ayudarte a optimizar tu logística.
+      </p>
+
+     <button class="btn open-form">Agendar llamada</button>
+
+      <div class="contact-image">
+        <img src="img/estadistica.jfif" alt="Análisis logístico">
+      </div>
+    </div>
+
+    <div class="contact-form glass-box hidden-form" id="formulario">
+      <h3>Agendar llamada</h3>
+      <form>
+        <input type="text" placeholder="Nombre y apellido" />
+        <input type="text" placeholder="Empresa" />
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Teléfono" />
+        <textarea placeholder="Contame brevemente en qué necesitás ayuda"></textarea>
+        <button type="submit" class="btn">Enviar consulta</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
   </main>
 
   <footer class="footer">
-  <div class="container footer-grid">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="img/marcoslogo.png" alt="Marcos Conti" class="footer-logo">
+        <p>
+          Consultoría en logística estratégica para optimizar procesos,
+          ordenar operaciones y acompañar el crecimiento de tu negocio.
+        </p>
+      </div>
 
-    <!-- LOGO + MARCA -->
-    <div class="footer-brand">
-      <img src="img/marcoslogo.png" alt="Marcos Conti" class="footer-logo">
-      <p>
-        Consultoría en logística estratégica para optimizar procesos,
-        reducir costos y escalar tu operación.
-      </p>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p> <i data-lucide="mail"></a></i> marcosconti@gmail.com </p>
+        <p><i data-lucide="phone"></i> +54 9 11 0000 0000</p>
+        <p><i data-lucide="map-pin"></i> Buenos Aires, Argentina</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Secciones</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
     </div>
 
-    <!-- CONTACTO -->
-    <div class="footer-contact">
-      <h4>Contacto</h4>
-      <p>📧 marcosconti@hotmail.com</p>
-      <p>📞 +54 9 11 0000 0000</p>
-      <p>📍 Buenos Aires, Argentina</p>
+    <div class="footer-bottom">
+      © 2025 Marcos Conti — Consultoría en Logística Estratégica
     </div>
+  </footer>
 
-    <!-- LINKS -->
-    <div class="footer-links">
-      <h4>Secciones</h4>
-      <a href="#servicios">Servicios</a>
-      <a href="#resultados">Resultados</a>
-      <a href="#contacto">Contacto</a>
-    </div>
 
-  </div>
-
-  <div class="footer-bottom">
-    © 2026 Marcos Conti — Todos los derechos reservados
-  </div>
-</footer>
-<script src="script.js"></script>
+  
+<script>
+  lucide.createIcons();</script>
+  <script src="script.js"></script>
 </body>
 </html>

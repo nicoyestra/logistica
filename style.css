@@ -920,11 +920,71 @@ body {
     0 0 18px rgba(40, 91, 139, 0.35);
   z-index: 9999;
   transition: all 0.3s ease;
+
 }
 
+
 .whatsapp-float:hover {
+  
   transform: scale(1.1);
   box-shadow:
     0 10px 30px rgba(0,0,0,0.45),
     0 0 25px rgba(56, 101, 185, 0.5);
+}
+
+
+.contact-item.linkedin {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Icono tipo "badge" */
+.contact-item.linkedin i {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
+  transition: 0.3s;
+}
+
+/* Link */
+.contact-item.linkedin a {
+  color: #9fb3c8;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Hover completo */
+.contact-item.linkedin:hover i {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(10, 102, 194, 0.5);
+}
+
+.contact-item.linkedin:hover a {
+  color: #35d6ff;
+}
+
+.contact-item.linkedin:hover {
+  filter: drop-shadow(0 0 6px rgba(53, 214, 255, 0.4));
+}
+
+
+.contact-item a:visited {
+  color: #9fb3c8;       /* evita que se ponga violeta */
+}
+
+.contact-item a:hover {
+  color: #35d6ff;       /* tu color celeste al pasar */
+}
+
+
+.contact-item a {
+  color: #9fb3c8;
+  text-decoration: none;
+  transition: 0.3s;
 }

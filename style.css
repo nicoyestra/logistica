@@ -988,3 +988,16 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
+
+.contact a {
+  display: inline-flex;
+  align-items:center;
+  gap:10x;
+  color: var(--muted);
+  text-decoration: none;
+  transition:0.2s ease;
+}
+
+.contact a:hover {
+  color: var(--primary);
+}
